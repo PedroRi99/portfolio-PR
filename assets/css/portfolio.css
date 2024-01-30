@@ -1,0 +1,403 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: 0;
+	list-style: none;
+	text-decoration: none;
+	scroll-behavior: smooth;
+	scroll-margin-top: 100px;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+body{
+	max-width: 1440px;
+	margin: 0 auto;
+	background: rgb(12, 12, 12);
+}
+
+header{
+	position: fixed;
+	z-index: 500;
+	width: 100%;
+	/* font-family: 'Nunito Sans', sans-serif; */
+}
+
+.nav-1{
+	margin: 0;
+}
+
+.section-sobre-mim{
+	height: 78vh;
+	background-image: url(/assets/img/portfolio_fotos/tela-pc.jpg);
+	background-size: 80%;
+	animation: inicializar .7s forwards;
+	display: flex;
+	align-items: center;
+}
+
+.sobre-mim-div1{
+	max-width: 600px;
+}
+
+.sobre-mim-parte1 {
+	color: #FFF;
+	background-color: #222;
+	padding: 15px;
+	border-radius: 5px;
+	box-shadow: 0px 3px 10px #b5b5b5;
+	border: 1px solid #FFF;
+	margin-bottom: 60px;
+	margin-top: 70px;
+}
+
+.sobre-mim-parte1 p{
+	font-size: 16px;
+}
+
+.sobre-mim-parte1 a{
+	background: #FFF;
+	color: #222;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 10px;
+	display: inline-flex;
+	padding: 10px;
+	margin-bottom: 8px;
+	text-decoration: none;
+}
+
+.sobre-mim-parte1 a:hover{
+	background: #969494;
+}
+
+.sobre-mim-div2{
+	display: flex;
+	justify-content: center;
+	animation: mover .7s infinite;
+}
+
+.titulo-principal{
+	display: flex;
+	font-weight: 600;
+}
+
+.texto-principal{
+	font-size: 16px;
+}
+
+.conteudo-sobre-mim{
+	background: #222;
+	color: #FFF;
+	padding: 20px;
+	margin-top: 30px;
+	gap: 3px;
+	display: grid;
+	box-shadow: 0px 3px 10px #b5b5b5;
+	border-radius: 25px;
+	border: 1px solid #FFF;
+	justify-content: center;
+	text-align: center;
+	font-size: 20px;
+}
+
+.conteudo-sobre-mim h2{
+	font-size: 4.0rem;
+}
+
+.conteudo-sobre-mim-hr{
+	display: grid;
+	justify-content: center;
+	text-align: center;
+}
+
+.conteudo-sobre-mim-hr div{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5px;
+}
+
+.conteudo-sobre-mim-hr div hr{
+	padding: 2px;
+	background: white; 
+	border: 2px; 
+	width: 25%;
+	margin: 1px;
+}
+
+/* Linguagem e Conhecimento */
+
+.section-linguagens{
+	padding: 60px;
+}
+
+.section-linguagens div{
+	gap: 15px;
+	justify-content: center;
+}
+
+.section-linguagens div h2{
+	font-size: 3.5rem;
+	font-weight: 500;
+	color: #FFF;
+	margin-bottom: -10px;
+}
+
+.conteudo-linguagens{
+	display: grid;
+	justify-content: center;
+	text-align: center;
+}
+
+.conteudo-linguagens div{
+	display: flex;
+	justify-content: center;
+}
+
+.conteudo-linguagens hr{
+	padding: 2px;
+	background: white; 
+	border: 2px; 
+	width: 25%;
+	margin: 1px;
+}
+
+.conteudo-sobre-mim hr{
+	padding: 2px;
+	background: white; 
+	border: 2px; 
+	width: 10%;
+}
+
+.div-linguagens{
+	padding: 20px;
+}
+
+.div-linguagens ul{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	align-items: center;
+	justify-content: center;
+}
+
+.div-linguagens ul li{
+	position: relative;
+	padding: 10px;
+	display: grid;
+	justify-content: center;
+	gap: 5px;
+	text-align: center;
+	max-width: 320px;
+	border-radius: 6px;
+	align-items: center;
+	background-color: #222;
+	box-shadow: 0px 3px 8px #b5b5b5;
+	border: 1px solid #FFF;
+	transition: .35s;
+	width: 70%;
+}
+
+.div-linguagens ul li h3{
+	color: #FFF;
+	font-size: 2.5rem;
+	font-weight: 500;
+}
+
+
+.img-linguagens{
+	max-height: 70px;
+	height: 70px;
+	margin: 0 auto;
+	padding: 2px;
+}
+
+.div-linguagens ul li:hover{
+	background: #969494;
+}
+
+.div-linguagens ul:hover > :not(:hover){
+	opacity: 4;
+	transform: scale(0.9);
+}
+
+/* Projetos */
+
+.conteudo-projetos{
+	background: #222;
+	color: #FFF;
+	padding: 20px;
+	gap: 15px;
+	box-shadow: 0px 3px 10px #b5b5b5;
+	border-radius: 25px;
+	border: 1px solid #FFF;
+	justify-content: center;
+	width: 100%;
+	flex-direction: column;
+}
+
+.slider{
+	width: 90%;
+	justify-content: center;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.slides{
+	display: inline-flex;
+	text-align: center;
+	margin: 8px;
+}
+
+.slides-1{
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	border-right: 1px solid white;
+}
+
+.slides-1 h4{
+	font-weight: bold;
+	font-size: 2.0rem;
+}
+
+.slides-1 p{
+	font-size: 18px;
+}
+
+.slides-3, .slides-4{
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.slides-3, .slides-4 img{
+	margin-bottom: 10px;
+}
+
+.slides-3 a{
+	background: #FFF;
+	border-radius: 10px;
+	text-decoration: none;
+	padding: 10px;
+	color: rgb(16, 72, 194);
+	margin-top: 10px;
+}
+
+.slides-3 a:hover{
+	background: #ffff48;
+}
+
+.slides-4 a{
+	background: #563D7C;
+	border-radius: 10px;
+	text-decoration: none;
+	padding: 10px;
+	color: #FFF;
+}
+
+.slides-4 a:hover{
+	background: #602fd9;
+}
+
+/* Contato */
+
+.contato-class{
+	color: #FFF;
+	margin-top: 3%;
+}
+
+.div1-contato{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.div2-contato{
+	display: flex;
+	flex-direction: column;
+}
+
+.div3-contato{
+	margin: 40px;
+}
+
+.text-contato{
+	display: flex;
+	justify-content: center;
+}
+
+.text-contato a{
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #FFF;
+}
+
+.img-contatos{
+	height: 60px;
+	max-height: 60px;
+	margin-left: 20px;
+}
+
+.text-contato-1{
+	max-width: 80px;
+	color: #FFF;
+}
+
+/* FOOTER */
+
+.footer-div1{
+	color: #FFF;
+}
+
+@media(max-width: 768px) {
+	.div1-contato {
+		justify-content: flex-start;
+	}
+
+	.div2-contato {
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+
+	.div3-contato {
+		margin: 5px;
+	}
+	
+	.img-contatos{
+		width: 50px;
+		max-width: 150px;
+	}
+	
+	.titulo-contato{
+		display: none;
+	}
+
+	.text-contato{
+		flex-direction: column-reverse;
+	}
+}
+
+@keyframes inicializar{
+	from {
+		opacity: 0;
+		transform: translate3d(0,-60px,0);
+	}
+
+	to {
+		opacity: 1;
+		transform: translate3d(0,0,0);
+	}
+}
+
+@keyframes mover{
+	0%{
+		transform: translateY(-5px);
+	}
+	50%{
+		transform: translateY(15px);
+	}
+	100%{
+		transform: translateY(-5px);
+	}
+}
