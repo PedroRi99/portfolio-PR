@@ -201,6 +201,8 @@ header{
 	color: #FFF;
 	font-size: 2.5rem;
 	font-weight: 500;
+	overflow: hidden;
+	word-wrap: break-word;
 }
 
 
@@ -352,7 +354,7 @@ header{
 
 @media(max-width: 768px) {
 	.div1-contato {
-		justify-content: flex-start;
+		justify-content: center;
 	}
 
 	.div2-contato {
@@ -362,6 +364,7 @@ header{
 
 	.div3-contato {
 		margin: 5px;
+		padding: 10px;
 	}
 	
 	.img-contatos{
@@ -375,6 +378,8 @@ header{
 
 	.text-contato{
 		flex-direction: column-reverse;
+		overflow: hidden;
+		word-wrap: break-word;
 	}
 }
 
