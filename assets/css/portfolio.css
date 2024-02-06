@@ -325,7 +325,7 @@ header{
 
 .text-contato{
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 }
 
 .text-contato a{
@@ -333,6 +333,11 @@ header{
 	align-items: center;
 	text-decoration: none;
 	color: #FFF;
+	font-size: 16px;
+}
+
+.texto-contato{
+	font-size: 16px;
 }
 
 .img-contatos{
@@ -378,8 +383,10 @@ header{
 
 	.text-contato{
 		flex-direction: column-reverse;
-		overflow: hidden;
-		word-wrap: break-word;
+	}
+
+	.text-contato-2{
+		display: contents;
 	}
 }
 
